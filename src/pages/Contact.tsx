@@ -29,15 +29,15 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-background pt-24">
+      <div className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <span className="inline-block text-primary text-lg font-medium tracking-wider uppercase mb-4">
             Get In Touch
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Start Your Property Journey?
-          </h2>
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Contact our expert team today for personalized real estate solutions and professional guidance.
           </p>
@@ -138,7 +138,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -29,17 +29,17 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-secondary/20">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-background pt-24">
+      <div className="container mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
             <span className="inline-block text-primary text-lg font-medium tracking-wider uppercase mb-4">
               About Heyza Properties
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Your Trusted Real Estate Partner in Dubai
-            </h2>
+            </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Located in the heart of Dubai's business district at SABAH 2, Jebel Ali Industrial area, 
               Heyza Properties brings together expertise, innovation, and personalized service to deliver 
@@ -47,7 +47,7 @@ const About = () => {
             </p>
             
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">Our Core Values</h3>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Our Core Values</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {values.map((value, index) => {
                   const IconComponent = value.icon;
@@ -56,7 +56,7 @@ const About = () => {
                       <div className="mx-auto mb-3 p-2 bg-primary/10 rounded-full w-fit">
                         <IconComponent className="h-6 w-6 text-primary" />
                       </div>
-                      <h4 className="font-semibold text-foreground mb-2">{value.title}</h4>
+                      <h3 className="font-semibold text-foreground mb-2">{value.title}</h3>
                       <p className="text-sm text-muted-foreground">{value.description}</p>
                     </div>
                   );
@@ -65,7 +65,7 @@ const About = () => {
             </div>
 
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">Why Choose Us</h3>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Why Choose Us</h2>
               <div className="space-y-3">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="flex items-center space-x-3">
@@ -102,7 +102,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
